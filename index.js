@@ -63,8 +63,6 @@ function makeClientFromData(data) {
     })) : [],
   };
 
-  console.log(client);
-
   // проверяем, все ли данные корректные и заполняем объект ошибок, которые нужно отдать клиенту
   if (!client.name) errors.push({ field: 'name', message: 'Не указано имя' });
   if (!client.surname) errors.push({ field: 'surname', message: 'Не указана фамилия' });
